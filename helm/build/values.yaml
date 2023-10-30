@@ -1,0 +1,15 @@
+app:
+  name: ibmw-wind-turbine-app
+  namespace: ibmw
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/ibmw-wind-turbine
+  org: WindTurbineInc
+  name: ibmw-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ibmw/wind-turbine-app
+  tag: latest
